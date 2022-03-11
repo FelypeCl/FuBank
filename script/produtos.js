@@ -23,28 +23,28 @@ function comprarProduto(produto, identificao){
                 let item1 = document.getElementById("item1");
                 item1.innerHTML = produto.nomeProduto + " -- -R$" + produto.valorProduto + " |";
                 custo = produto.valorProduto;
-                cobrarCustoProduto(contaUm, custo)
+                cobrarCustoProduto(conta, custo)
                 carregarSaldo();
             break;
         case 2:
                 let item2 = document.getElementById("item2");
                 item2.innerHTML = produto.nomeProduto + " -- -R$" + produto.valorProduto + " |";
                 custo = produto.valorProduto;
-                cobrarCustoProduto(contaUm, custo)
+                cobrarCustoProduto(conta, custo)
                 carregarSaldo();
             break;
         case 3:
                 let item3 = document.getElementById("item3");
                 item3.innerHTML = produto.nomeProduto + " -- -R$" + produto.valorProduto + " |";
                 custo = produto.valorProduto;
-                cobrarCustoProduto(contaUm, custo)
+                cobrarCustoProduto(conta, custo)
                 carregarSaldo();
             break;
         case 4:
                 let item4 = document.getElementById("item4");
                 item4.innerHTML = produto.nomeProduto + " -- -R$" + produto.valorProduto + " |";
                 custo = produto.valorProduto;
-                cobrarCustoProduto(contaUm, custo)
+                cobrarCustoProduto(conta, custo)
                 carregarSaldo();
             break;
         default:

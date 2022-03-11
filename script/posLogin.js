@@ -15,11 +15,11 @@ function esconderSaldo(){
 }
 
 function carregarSaldo(){
-    document.getElementById("saldo").innerHTML = "R$"+getSaldo(contaUm);
+    document.getElementById("saldo").innerHTML = "R$"+getSaldo(conta);
 }
 
 function carregarInfoDoUsuario(){
-    document.getElementById("nomeCliente").innerHTML = "Olá, " + getNome(contaUm);
+    document.getElementById("nomeCliente").innerHTML = "Olá, " + getNome(conta);
     carregarSaldo();
 }
 

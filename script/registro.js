@@ -1,21 +1,12 @@
 let enviarRegistro;
-let conta;
 
 enviarRegistro = document.getElementById("enviarRegistro");
 enviarRegistro.addEventListener("click", function(event){
     salvarDadosDoRegistro();
-    registro(localStorage.getItem("nome"), localStorage.getItem("senha"), localStorage.getItem("saldo"));
+    document.location.reload(true);
 });
 
-let contaTeste = new Conta(localStorage.getItem("nome"), localStorage.getItem("senha"), localStorage.getItem("saldo"))
-//console.log(contaTeste);
-
-function registro(nomeRegistro,senhaRegistro,saldoRegistro){
-    conta = new Conta(nomeRegistro,senhaRegistro,saldoRegistro);
-    console.log(conta);
-}
-
-console.log(conta);
+conta = new Conta(localStorage.getItem("nome"), localStorage.getItem("senha"), localStorage.getItem("saldo"));
 
 function salvarDadosDoRegistro(){
     localStorage.setItem("nome", document.getElementById("registrarNome").value);

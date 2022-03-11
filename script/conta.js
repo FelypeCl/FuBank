@@ -2,7 +2,7 @@
 *   Dados
 */
 
-let saldo, nome, senha;
+let saldo, nome, senha,conta;
 
 /*
 let numeroTeleforne;
@@ -17,14 +17,12 @@ function Conta(nome,senha,saldo){
     this.saldo = saldo;
 }
 
-const contaUm = new Conta("Pedro", "1234", 576.40);
-
 /*
 * Manipuladores das contas
 */
 
 function getSaldo(conta){
-    return conta.saldo.toFixed(2);
+    return Number(conta.saldo).toFixed(2);
 }
 
 function getNome(conta){

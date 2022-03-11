@@ -33,7 +33,7 @@ function validacao(){
     const senha = document.getElementById("senha").value;
 
     if(user.length > 0 && senha.length > 0){
-        if(validadorDeUsuario(contaUm, user) && validadorDeSenha(contaUm, senha)){
+        if(validadorDeUsuario(conta, user) && validadorDeSenha(conta, senha)){
             removerLogin();
             carregarTelaDeUsuario();
         } else {

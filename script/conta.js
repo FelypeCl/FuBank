@@ -38,3 +38,18 @@ function gerenciadorDeContas(conta,nome,senha,saldo){
     conta.senha = senha,
     conta.saldo = saldo;
 }
+
+function iniciarTelaDeEditarDados(){
+    removerTelaDeUsuario();
+    iniciarTelaDeRegistro();
+    document.getElementById("h1Registro").innerHTML = "Editar dados";
+}
+
+function iniciarTelaDeDadosPessoais(){
+    removerTelaDeUsuario();
+    document.getElementById("areaDeDados").style.display="block";
+    document.getElementById("mostrarNome").placeholder= conta.nome;
+    document.getElementById("mostrarSenha").placeholder= conta.senha;
+    document.getElementById("mostrarSaldo").placeholder= "R$"+conta.saldo;
+    document.getElementById("voltarPraTelaDeUser").value = "Voltar para tela inicial";
+}

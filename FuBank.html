@@ -21,6 +21,23 @@
                 <td><button class="botao" id="registrar" onclick="iniciarTelaDeRegistro()">Registrar</button></td>
             </tr>
 
+            <!--função dos botões de interações-->
+            <div id="areaDeDados">
+                    <h1 id="h1Dados">Seus dados pessoais.</h1>
+                <tr>
+                    <td><input id="mostrarNome" type="text" placeholder="" disabled></td>
+                </tr>
+                <tr>
+                    <td><input id="mostrarSenha" type="text" placeholder="" disabled></td>
+                </tr>
+                <tr>
+                    <td><input id="mostrarSaldo" type="text" placeholder="" disabled></td>
+                </tr>
+                <tr>
+                    <td><input id="voltarPraTelaDeUser" class="btnVoltar" type="submit" onclick="logar()"></td>
+                </tr>
+            </div>
+
             <!--Registro-->
             <div id="areaRegistro">
                     <h1 id="h1Registro">Registro</h1>
@@ -56,16 +73,17 @@
             
             <div id="interecoesEssenciais">
                 <div id="centralizarInteracoes">
-                    <tr>
-                        <td><button class="botoesInteracoes">Editar dados</button></td>
-                        <td><button class="botoesInteracoes">Dados pessoais</button></td>
-                        <td><button class="botoesInteracoes" onclick="document.location.reload(true)">Sair</button></td>
-                    </tr>
-                    <tr>
-                        <td><button id="botoesInteracoes2" class="botoesInteracoes">Depositar</button></td>
-                        <td><button id="botoesInteracoes2" class="botoesInteracoes">Sacar</button></td>
-                        <td><button id="botoesInteracoes2" class="botoesInteracoes">Transferir</button></td>
-                    </tr>
+                    <!--botões de interações-->
+                        <tr>
+                            <td><button class="botoesInteracoes" onclick="iniciarTelaDeEditarDados()">Editar dados</button></td>
+                            <td><button class="botoesInteracoes" onclick="iniciarTelaDeDadosPessoais()">Dados pessoais</button></td>
+                            <td><button class="botoesInteracoes" onclick="document.location.reload(true)">Sair</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="botoesInteracoes2" class="botoesInteracoes">Depositar</button></td>
+                            <td><button id="botoesInteracoes2" class="botoesInteracoes">Sacar</button></td>
+                            <td><button id="botoesInteracoes2" class="botoesInteracoes">Transferir</button></td>
+                        </tr>
                 </div>
             </div>
 

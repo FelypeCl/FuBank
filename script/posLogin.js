@@ -24,7 +24,7 @@ function carregarInfoDoUsuario(){
 }
 
 function carregarTelaDeUsuario(){
-    document.getElementById("central").style.height = '800px';
+    document.getElementById("central").style.height = '600px';
     document.getElementById("central").style.width = '600px';
     document.getElementById("central").style.backgroundColor = '#ffffff';
     document.getElementById("areaUser").style.display="block";
@@ -33,4 +33,12 @@ function carregarTelaDeUsuario(){
     document.getElementById("historico").style.display="block";
     document.getElementById("porEnquantoNada").style.display="block";
     carregarInfoDoUsuario();
+}
+
+function removerTelaDeUsuario(){
+    document.getElementById("areaUser").style.display="none";
+    document.getElementById("infoUser").style.display="none";
+    document.getElementById("interecoesEssenciais").style.display="none";
+    document.getElementById("historico").style.display="none";
+    document.getElementById("porEnquantoNada").style.display="none";
 }

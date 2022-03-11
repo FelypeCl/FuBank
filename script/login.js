@@ -26,6 +26,12 @@ function removerLogin(){
     document.getElementById("bemvindo").style.display="none";
     document.getElementById("alerta").style.display="none";
     document.getElementById("registrar").style.display="none";
+    document.getElementById("areaDeDados").style.display="none";
+}
+
+function logar(){
+    removerLogin();
+    carregarTelaDeUsuario();
 }
 
 function validacao(){
@@ -34,8 +40,7 @@ function validacao(){
 
     if(user.length > 0 && senha.length > 0){
         if(validadorDeUsuario(conta, user) && validadorDeSenha(conta, senha)){
-            removerLogin();
-            carregarTelaDeUsuario();
+            logar();
         } else {
             alerta("Os dados abaixo estão inválidos.");
         }

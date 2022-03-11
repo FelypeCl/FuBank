@@ -5,3 +5,4 @@ document.getElementById("interecoesEssenciais").style.display="none";
 document.getElementById("historico").style.display="none";
 document.getElementById("areaRegistro").style.display="none";
 document.getElementById("porEnquantoNada").style.display="none";
+document.getElementById("areaDeDados").style.display="none";

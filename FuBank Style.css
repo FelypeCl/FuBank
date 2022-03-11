@@ -155,7 +155,7 @@ input:focus{
 #porEnquantoNada{
     margin-top: 10px;
     width: 100%;
-    max-height: 260px;
+    max-height: 50px;
     height: 100%;
 }
 
@@ -209,4 +209,30 @@ input:focus{
     transform: translate(0%,100%);
     display: block; 
     color: rgb(47, 47, 47);
+}
+
+#areaDeDados>input{
+    text-align: center;
+    transform: translate(23%,150%);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    display: block;
+    width: 70%;
+    height: 50px;
+    font-size: 25px;
+}
+
+#h1Dados{
+    transform: translate(0%,100%);
+    display: block; 
+    color: rgb(47, 47, 47);
+}
+
+#voltarPraTelaDeUser{
+    cursor: pointer;
+}
+
+#voltarPraTelaDeUser:hover {
+    border-color: rgb(51, 19, 90);
 }

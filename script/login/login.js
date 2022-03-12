@@ -10,7 +10,7 @@ function validadorDeUsuario(conta, nomeDeEntrada){
         return true;
     else
         return false;    
-}
+} 
 
 function validadorDeSenha(conta, senhaDeEntrada){
     if(conta.senha == senhaDeEntrada)

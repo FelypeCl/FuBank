@@ -32,5 +32,7 @@ function carregarTelaDeRegistro(){
     document.getElementById("central").style.height = '600px';
     document.getElementById("central").style.width = '600px';
     document.getElementById("central").style.backgroundColor = '#ffffff';
+    document.getElementById("central").style.left="0%";
     document.getElementById("areaRegistro").style.display="block";
 }
+

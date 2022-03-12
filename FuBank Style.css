@@ -5,7 +5,6 @@
 }
 
 #container{
-    position: absolute;
     width: 100vw;
     height: 100vh;
     background-color: rgb(156, 68, 220);
@@ -13,24 +12,42 @@
     text-align: center;
 }
 
-#central{
+#centralTudo{
     position: relative;
+    width: 1400px;
+    height: 600px;
+    top: 15%;
+    left: 13.8%;
+}
+
+#central{
+    display: block;
+    position: absolute;
     height: 300px;
     width: 300px;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
+    left: 25%;
     text-align: center;
     background-color: rgb(51, 19, 90);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#nomeCliente{
+#central2{
+    display: block;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    left: 52.5%;
+    text-align: center;
+    background-color: rgb(51, 19, 90);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#nomeCliente,#nomeCliente2{
     padding: 40px;
     padding-left: 30px;
 }
 
-#areaUser{
+#areaUser,#areaUser2{
     font-size: 12px;
     text-align: left;
     height: 130px;
@@ -38,7 +55,7 @@
     background-color: rgb(102, 20, 149);
 }
 
-#infoUser{
+#infoUser,#infoUser2{
     color: rgb(47, 47, 47);
     text-align: left;
     font-size: 12px;
@@ -46,13 +63,13 @@
     padding-left: 30px;
 }
 
-#saldo{
+#saldo,#saldo2{
     padding-top: 10px;
     font-size: 25px;
     color: rgb(22, 22, 22);
 }
 
-#botoesUser{
+#botoesUser, #botoesUser2{
     transform: translate(1350%,40%);
     height: 30px;
     width: 40px;
@@ -78,13 +95,13 @@
     background-color: rgb(88, 41, 100);
 }
 
-#alerta{
+#alerta,#alerta2{
     color: red;
     font-size: 17px;
     padding-bottom: 20px;
 }
 
-#bemvindo{
+#bemvindo,#bemvindo2{
     padding-top: 20px;
     padding-bottom: 40px;
 }
@@ -113,7 +130,7 @@ input:focus{
     border: 3px solid rgb(156, 68, 220); 
 }
 
-#interecoesEssenciais{
+#interecoesEssenciais,#interecoesEssenciais2{
     border: solid;
     border-color: rgb(156, 68, 220);
     border-top-width: 10px;
@@ -125,12 +142,12 @@ input:focus{
     position: absolute;
 }
 
-#centralizarInteracoes{
+#centralizarInteracoes,#centralizarInteracoes2{
     position: relative;
     transform:translate(0%,30%);
 }
 
-#botoesInteracoes2{
+#botaoTransferir, #botaoDepositar, #botaoSacar{
     transform:translate(0%,70%);
 }
 
@@ -152,14 +169,14 @@ input:focus{
     background-color: rgb(51, 19, 90);
 }
 
-#porEnquantoNada{
+#porEnquantoNada,#porEnquantoNada2{
     margin-top: 10px;
     width: 100%;
     max-height: 50px;
     height: 100%;
 }
 
-#historico{
+#historico,#historico2{
     border: solid;
     border-color: rgb(156, 68, 220);
     border-top-width: 10px;
@@ -171,17 +188,17 @@ input:focus{
     transform:translate(0%, 185%);
 }
 
-#centralizarHistorico{
+#centralizarHistorico,#centralizarHistorico2{
     position: relative;
     transform:translate(0%,15%);
 }
 
-#centralizarHistorico>h3{
+#centralizarHistorico>h3, #centralizarHistorico2>h3{
     color: rgb(47, 47, 47);
     transform:translate(-37%,0%);
 }
 
-#centralizarHistorico>p{
+#centralizarHistorico>p, #centralizarHistorico2>p{
     font-size: 18px;
     display: inline;
     color: rgb(47, 47, 47);
@@ -205,13 +222,22 @@ input:focus{
     font-size: 25px;
 }
 
-#h1Registro{
+#areaRegistro2>input{
+    text-align: center;
+    transform: translate(23%,150%);
+    display: block;
+    width: 70%;
+    height: 50px;
+    font-size: 25px;
+}
+
+#h1Registro, #h1Registro2{
     transform: translate(0%,100%);
     display: block; 
     color: rgb(47, 47, 47);
 }
 
-#areaDeDados>input{
+#areaDeDados>input,#areaDeDados2>input{
     text-align: center;
     transform: translate(23%,150%);
     border-top: 0px;
@@ -223,7 +249,7 @@ input:focus{
     font-size: 25px;
 }
 
-#h1Dados{
+#h1Dados,#h1Dados2{
     transform: translate(0%,100%);
     display: block; 
     color: rgb(47, 47, 47);

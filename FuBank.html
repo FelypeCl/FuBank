@@ -10,104 +10,197 @@
 <body>
     <div id="container">
         <h1 id="fubank">FüBank</h1>
-        <div id="central">
-            <!--Fazer registro/login-->
-            <h1 id="bemvindo">Bem vindo(a)!</h1>
-            <h2 id="alerta">Alerta</h2>
-            <tr>
-                <td><input type="text" placeholder="Usuário" id="user"></td>
-                <td><input type="password" placeholder="Senha" id="senha"></td>
-                <td><button class="botao" id="logar" onclick="validacao()">Logar</button></td>
-                <td><button class="botao" id="registrar" onclick="iniciarTelaDeRegistro()">Registrar</button></td>
-            </tr>
-
-            <!--função dos botões de interações-->
-            <div id="areaDeDados">
-                    <h1 id="h1Dados">Seus dados pessoais.</h1>
+        <div id="centralTudo">
+            <div id="central">
+                <!--Fazer registro/login-->
+                <h1 id="bemvindo">Bem vindo(a)!</h1>
+                <h2 id="alerta">Alerta</h2>
                 <tr>
-                    <td><input id="mostrarNome" type="text" placeholder="" disabled></td>
+                    <td><input type="text" placeholder="Usuário da primeira conta." id="user"></td>
+                    <td><input type="password" placeholder="Senha da primeira conta." id="senha"></td>
+                    <td><button class="botao" id="logar" onclick="validacao()">Logar</button></td>
+                    <td><button class="botao" id="registrar" onclick="iniciarTelaDeRegistro()">Registrar</button></td>
                 </tr>
-                <tr>
-                    <td><input id="mostrarSenha" type="text" placeholder="" disabled></td>
-                </tr>
-                <tr>
-                    <td><input id="mostrarSaldo" type="text" placeholder="" disabled></td>
-                </tr>
-                <tr>
-                    <td><input id="voltarPraTelaDeUser" class="btnVoltar" type="submit" onclick="logar()"></td>
-                </tr>
-            </div>
-
-            <!--Registro-->
-            <div id="areaRegistro">
-                    <h1 id="h1Registro">Registro</h1>
-                <tr>
-                    <td><input id="registrarNome" type="text" placeholder="Digite seu primeiro nome."></td>
-                </tr>
-                <tr>
-                    <td><input id="registrarSenha" type="text" placeholder="Digite uma senha."></td>
-                </tr>
-                <tr>
-                    <td><input id="registrarSaldo" type="text" placeholder="Digite um saldo para sua conta."></td>
-                </tr>
-                <tr>
-                    <td><input id="enviarRegistro" class="btnRegistro" type="submit"></td>
-                </tr>
-            </div>
-            
-            <!--Logado-->
-            <div id="areaUser">
-                <div id="botoesUser">
-                    <div><img id="olho" src="img/Olho.png"></div>
-                </div>
-                <h1 id="nomeCliente"></h1>
-            </div>
-
-            <div id="infoUser">
-                <h1>Conta</h1>
-                <h2 id="saldo"></h2>
-            </div>
-
-            <div id="porEnquantoNada">
-            </div>
-            
-            <div id="interecoesEssenciais">
-                <div id="centralizarInteracoes">
-                    <!--botões de interações-->
-                        <tr>
-                            <td><button class="botoesInteracoes" onclick="iniciarTelaDeEditarDados()">Editar dados</button></td>
-                            <td><button class="botoesInteracoes" onclick="iniciarTelaDeDadosPessoais()">Dados pessoais</button></td>
-                            <td><button class="botoesInteracoes" onclick="document.location.reload(true)">Sair</button></td>
-                        </tr>
-                        <tr>
-                            <td><button id="botoeDepositar" class="botoesInteracoes">Depositar</button></td>
-                            <td><button id="botaoSacar" class="botoesInteracoes">Sacar</button></td>
-                            <td><button id="botoesInteracoes2" class="botoesInteracoes">Transferir</button></td>
-                        </tr>
-                </div>
-            </div>
-
-            <div id="historico">
-                <div id="centralizarHistorico">
+    
+                <!--função dos botões de interações-->
+                <div id="areaDeDados">
+                        <h1 id="h1Dados">Seus dados pessoais.</h1>
                     <tr>
-                        <h3>Histórico</h3>
-                        <p id="item1"></p>
-                        <p id="item2"></p>
-                        <p id="item3"></p>
-                        <p id="item4"></p>
+                        <td><input id="mostrarNome" type="text" placeholder="" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><input id="mostrarSenha" type="text" placeholder="" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><input id="mostrarSaldo" type="text" placeholder="" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><input id="voltarPraTelaDeUser" class="btnVoltar" type="submit" onclick="logar()"></td>
                     </tr>
                 </div>
+    
+                <!--Registro-->
+                <div id="areaRegistro">
+                        <h1 id="h1Registro">Registro</h1>
+                    <tr>
+                        <td><input id="registrarNome" type="text" placeholder="Digite seu primeiro nome."></td>
+                    </tr>
+                    <tr>
+                        <td><input id="registrarSenha" type="text" placeholder="Digite uma senha."></td>
+                    </tr>
+                    <tr>
+                        <td><input id="registrarSaldo" type="text" placeholder="Digite um saldo para sua conta."></td>
+                    </tr>
+                    <tr>
+                        <td><input id="enviarRegistro" class="btnRegistro" type="submit"></td>
+                    </tr>
+                </div>
+                
+                <!--Logado-->
+                <div id="areaUser">
+                    <div id="botoesUser">
+                        <div><img id="olho" src="img/Olho.png"></div>
+                    </div>
+                    <h1 id="nomeCliente"></h1>
+                </div>
+    
+                <div id="infoUser">
+                    <h1>Conta</h1>
+                    <h2 id="saldo"></h2>
+                </div>
+    
+                <div id="porEnquantoNada">
+                </div>
+                
+                <div id="interecoesEssenciais">
+                    <div id="centralizarInteracoes">
+                        <!--botões de interações-->
+                            <tr>
+                                <td><button class="botoesInteracoes" onclick="iniciarTelaDeEditarDados()">Editar dados</button></td>
+                                <td><button class="botoesInteracoes" onclick="iniciarTelaDeDadosPessoais()">Dados pessoais</button></td>
+                                <td><button class="botoesInteracoes" onclick="document.location.reload(true)">Sair</button></td>
+                            </tr>
+                            <tr>
+                                <td><button id="botaoDepositar" class="botoesInteracoes">Depositar</button></td>
+                                <td><button id="botaoSacar" class="botoesInteracoes">Sacar</button></td>
+                                <td><button id="botaoTransferir" class="botoesInteracoes">Transferir</button></td>
+                            </tr>
+                    </div>
+                </div>
+    
+                <div id="historico">
+                    <div id="centralizarHistorico">
+                        <tr>
+                            <h3>Histórico</h3>
+                            <p id="item1"></p>
+                            <p id="item2"></p>
+                            <p id="item3"></p>
+                            <p id="item4"></p>
+                        </tr>
+                    </div>
+                </div>
             </div>
 
+            <div id="central2">
+                <!--Fazer registro/login-->
+                <h1 id="bemvindo2">Bem vindo(a)!</h1>
+                <h2 id="alerta2">Alerta</h2>
+                <tr>
+                    <td><input type="text" placeholder="Usuário da segunda conta." id="user2"></td>
+                    <td><input type="password" placeholder="Senha da segunda conta." id="senha2"></td>
+                    <td><button class="botao" id="logar2" onclick="validacao2()">Logar</button></td>
+                    <td><button class="botao" id="registrar2" onclick="iniciarTelaDeRegistro2()">Registrar</button></td>
+                </tr>
+                
+                <div id="areaDeDados2">
+                        <h1 id="h1Dados2">Seus dados pessoais.</h1>
+                    <tr>
+                        <td><input id="mostrarNome2" type="text" placeholder="" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><input id="mostrarSenha2" type="text" placeholder="" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><input id="mostrarSaldo2" type="text" placeholder="" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><input id="voltarPraTelaDeUser2" class="btnVoltar" type="submit" onclick="logar2()"></td>
+                    </tr>
+                </div>
+                
+                <div id="areaRegistro2">
+                        <h1 id="h1Registro2">Registro</h1>
+                    <tr>
+                        <td><input id="registrarNome2" type="text" placeholder="Digite seu primeiro nome."></td>
+                    </tr>
+                    <tr>
+                        <td><input id="registrarSenha2" type="text" placeholder="Digite uma senha."></td>
+                    </tr>
+                    <tr>
+                        <td><input id="registrarSaldo2" type="text" placeholder="Digite um saldo para sua conta."></td>
+                    </tr>
+                    <tr>
+                        <td><input id="enviarRegistro2" class="btnRegistro" type="submit"></td>
+                    </tr>
+                </div>
+                
+                <div id="areaUser2">
+                    <div id="botoesUser2">
+                        <div><img id="olho2" src="img/Olho.png"></div>
+                    </div>
+                    <h1 id="nomeCliente2"></h1>
+                </div>
+    
+                <div id="infoUser2">
+                    <h1>Conta</h1>
+                    <h2 id="saldo2"></h2>
+                </div>
+    
+                <div id="porEnquantoNada2">
+                </div>
+                
+                <div id="interecoesEssenciais2">
+                    <div id="centralizarInteracoes2">
+                            <tr>
+                                <td><button class="botoesInteracoes" onclick="iniciarTelaDeEditarDados2()">Editar dados</button></td>
+                                <td><button class="botoesInteracoes" onclick="iniciarTelaDeDadosPessoais2()">Dados pessoais</button></td>
+                                <td><button class="botoesInteracoes" onclick="document.location.reload(true)">Sair</button></td>
+                            </tr>
+                            <tr>
+                                <td><button id="botaoDepositar" class="botoesInteracoes">Depositar</button></td>
+                                <td><button id="botaoSacar" class="botoesInteracoes">Sacar</button></td>
+                                <td><button id="botaoTransferir" class="botoesInteracoes">Transferir</button></td>
+                            </tr>
+                    </div>
+                </div>
+
+                <div id="historico2">
+                    <div id="centralizarHistorico2">
+                        <tr>
+                            <h3>Histórico</h3>
+                            <p id="item1"></p>
+                            <p id="item2"></p>
+                            <p id="item3"></p>
+                            <p id="item4"></p>
+                        </tr>
+                    </div>
+                </div>
+    </div>
         </div>
     </div>
-    <script src="script/login.js"></script>
-    <script src="script/posLogin.js"></script>
-    <script src="script/conta.js"></script>
-    <script src="script/produtos.js"></script>
-    <script src="script/registro.js"></script>
+    <!--Scripts da conta 1-->
+    <script src="script/login/login.js"></script>
+    <script src="script/posLogin/posLogin.js"></script>
+    <script src="script/conta/conta.js"></script>
+    <script src="script/produtos/produtos.js"></script>
+    <script src="script/registro/registro.js"></script>
     <script src="script/hidder.js"></script>
-    <script src="script/depositar.js"></script>
-    <script src="script/sacar.js"></script>
+    <script src="script/transacoes/depositar.js"></script>
+    <script src="script/transacoes/sacar.js"></script>
+    <!--Scripts da conta 2-->
+    <script src="script/login/login2.js"></script>
+    <script src="script/posLogin/posLogin2.js"></script>
+    <script src="script/registro/registro2.js"></script>
+    <script src="script/conta/conta2.js"></script>
 </body>
 </html>

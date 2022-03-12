@@ -3,7 +3,7 @@ function depositar(conta,valorDepositar){
     localStorage.setItem("saldo", conta.saldo);
 }
 
-document.getElementById("botoeDepositar").addEventListener("click",function(event){
+document.getElementById("botaoDepositar").addEventListener("click",function(event){
     var valor=prompt("Informe o valor:")
     depositar(conta, Number(valor));
     carregarSaldo();

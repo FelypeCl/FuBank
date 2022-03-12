@@ -27,6 +27,7 @@ function carregarTelaDeUsuario(){
     document.getElementById("central").style.height = '600px';
     document.getElementById("central").style.width = '600px';
     document.getElementById("central").style.backgroundColor = '#ffffff';
+    document.getElementById("central").style.left="0%";
     document.getElementById("areaUser").style.display="block";
     document.getElementById("infoUser").style.display="block";
     document.getElementById("interecoesEssenciais").style.display="block";

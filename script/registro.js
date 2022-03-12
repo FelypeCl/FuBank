@@ -14,7 +14,7 @@ enviarRegistro.addEventListener("click", function(event){
     }
 });
 
-conta = new Conta(localStorage.getItem("nome"), localStorage.getItem("senha"), localStorage.getItem("saldo"));
+conta = new Conta(localStorage.getItem("nome"), localStorage.getItem("senha"), Number(localStorage.getItem("saldo")));
 
 function salvarDadosDoRegistro(){
     localStorage.setItem("nome", document.getElementById("registrarNome").value);
